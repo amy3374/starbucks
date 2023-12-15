@@ -36,8 +36,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <!-- SWIPER -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
     <script defer src="./js/main.js"></script>
   </head>
@@ -408,7 +408,7 @@
         <div class="inner">
           <div class="inner__left">
             <h2>공지사항</h2>
-            <div class="swiper">
+            <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide"> 
                   <a href="javascript:void(0)">크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a>
@@ -434,6 +434,39 @@
               <div class="material-icons">upload</div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="promotion">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide1.jpg" alt="2024 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!"/>
+              <a href="javascrpt:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide2.jpg" alt="2024 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!"/>
+              <a href="javascrpt:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide3.jpg" alt="2024 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!"/>
+              <a href="javascrpt:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide4.jpg" alt="2024 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!"/>
+              <a href="javascrpt:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide5.jpg" alt="2024 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!"/>
+              <a href="javascrpt:void(0)" class="btn">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-prev">
+          <div class="material-icons">arrow_back</div>
+        </div>
+        <div class="swiper-next">
+          <div class="material-icons">arrow_forward</div>
         </div>
       </div>
     </section>

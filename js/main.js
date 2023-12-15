@@ -47,8 +47,39 @@ fadeEls.forEach(function (fadeEl, index) {
   });
 });
 
-const swiper = new Swiper(".notice-line .swiper", {
+new Swiper(".notice-line .swiper-container", {
   direction: "vertical",
   autoplay: true,
   loop: true,
+});
+new Swiper(".promotion .swiper-container", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: ".promotion .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    prevEl: ".promotion .swiper-prev",
+    nextEl: ".promotion .swiper-next",
+  },
+});
+
+const promotionEl = document.querySelector(".promotion");
+const promotionToggleBtn = document.querySelector(".toggle-promotion");
+let isHidePromotion = false;
+promotionToggleBtn.addEventListener("click", function () {
+  isHidePromotion = !isHidePromotion;
+  if (isHidePromotion) {
+    //숨김
+    promotionEl.classList.add("hide");
+  } else {
+    //보여줌
+    promotionEl.classList.remove("hide");
+  }
 });
